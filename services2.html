@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h1 {
+  color: blue;
+  text-align: center;
+  font-family: verdana;
+  font-size: 20px;
+  padding: 20px;
+}
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: green;
+    width: 30%;
+    height: 200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 60px 22px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: gold;
+}
+
+/* Style the tab content */
+.tabcontent {
+background-color: blue;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 700px;
+
+   }
+</style>
+</head>
+<body>
+
+<h1>CURRIE PROPERTY INVESTMENTS SERVICES</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openservice(event, 'Land Deals')" id="defaultOpen">Land Deals</button>
+  <button class="tablinks" onclick="openservice(event, 'Land Sale')">Land Sale</button>
+  <button class="tablinks" onclick="openservice(event, 'Buy to Let')">Buy to Let</button>
+  <button class="tablinks" onclick="openservice(event, 'Property Management')">Property Management</button>
+  <button class="tablinks" onclick="openservice(event, 'Project Management and Developments')">Project Management and Developments</button>
+</div>
+
+<div id="Land Deals" class="tabcontent">
+
+  <h3>Land Deals</h3>
+  <p>Are you bad at negotiations?Currie Property Investment channel the best property deals in your way through its experienced property dealers.We understand that today ,investing in land is just as bountiful as investing in somethng like gold. Instead of letting your right of getting a good property being snatched away from you ,let CPI take care of the matter for you. As property dealing experts, we sift the property listings to obtain the perfect price. Whether you want to get a small dael done at high costs or get a bulk deal done instantly, CPI can help you in either casessss.</p>
+</div>
+
+<div id="Land Sale" class="tabcontent">
+  <h3>Land Sale</h3>
+  <p>Currie Property Investment is renowed for its land sale expertise. Apart from identifying the best selling opportunities for property investors, we assist our clients in making the right move at the right time. Forget the hassle of visiting one buyer to the next to make a good deal. CPI can not only take care of your requirements but also make them come to a mutual land sale agreement. CPI works closely with its clients, which is why we can get you the best land selling opportunity in no time.</p> 
+</div>
+
+<div id="Buy to Let" class="tabcontent">
+  <h3>Buy to Let</h3>
+  <p>According to recent reports , prooerty investoers can multiply their investments easily through buy to let method. Fortunately CPI wins all over the other brands when it comes to identifying high income investment opportunities. we will not only assist you in choosing the right property to rent on a longterm basis but also handpick the best deals for you.</p>
+</div>
+
+<div id="Property Management" class="tabcontent">
+  <h3>Property Management</h3>
+  <p>Are you having any troubles in property management?CPI has got all the time and dedication to look after your precious proprty. We assist large and small investors in boosting their investment strategy so that better property magement can be practiced. with us, enjoy the thrill of accomplished goals!We keep a close breadth with the latest trends in property investment,which is why we are offering rent to rent services.from land selling to a collection of guaranteed rent,CPI's team of rent to rent experts will assist you in every regard. Build a substantial portfolio and enjoy heaps on cash flowing in every month!</p>
+</div>
+
+<div id="Project Management and Developments" class="tabcontent">
+  <h3>Project Management and Developments</h3>
+  <p>Currie Poperty Investment bags years of experience in land selling and development. Our experts have close contacts with property contractors, developers and property governing agencies. As a result we not only familiarize ourselves with your land development goals but also craft a suitable project around it. We help you master-plan your dream house or create aperfect workplace merely evaluating your needs moreover, we are practical and efficient in all our dealings which are made in complete disclosure and transparency. Let us take over your next land sale and development project to see the magic unwind! .</p>
+</div>
+
+<script>
+function openservice(evt, serviceName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(serviceName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+
+</html> 
+<style>
+        body{background-image:url(CPI.png);
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-position:center;
+            background-size: 100% 100%;}
+        </style>
